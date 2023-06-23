@@ -3,6 +3,7 @@ FROM openjdk:8
 LABEL author="Mahesh Reddy"
 LABEL maintainer="qtdevops@gmail.com"
 ENV applicationpath='/springpetclinic.jar'
+ENV dummy='dummy'
 ARG downloadlocation
 # Downloading the image from the url
 ADD  ${downloadlocation} ${applicationpath}
